@@ -1,0 +1,80 @@
+/*---------------------
+VARIABLES
+----------------------*/
+
+:root {
+    --darkblue: #173057;
+    --ltgrey: #e7e7e7;
+    --white: #fff;
+    --darkgrey: #434343;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    background: var(--ltgrey);
+    font-size: 14px;
+    color: var(--darkgrey);
+}
+main {
+    min-height: 100vh;
+}
+.box {
+    background: var(--white);
+
+}
+.intro {
+    padding: 0 20px;
+}
+.intro-img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+}
+.sidebar, .main-content {
+    background: var(--white);
+}
+
+.sidebar-header {
+    background: var(--darkblue);
+    padding: 20px;
+    color: var(--white);
+}
+.sidebar-footer {
+    padding: 10px;
+}
+.sidebar h2 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+.sidebar h3 {
+    font-size: 1.2rem;
+}
+#sidebarnav {
+    margin-bottom: 0;
+}
+#sidebarnav li {
+    position: relative;
+    padding: 10px  20px;
+    border-bottom: 1px solid var(--ltgrey);
+    height: inherit;
+}
+.status{
+position: absolute;
+width: 5px;
+border-right: solid 1px #e1e1e1;
+background: #f1f1f1;
+content: "";
+margin-left: -20px;
+margin-top: -10px;
+height: 100%;
+z-index: 99;
+transition: all ease .3s;
+}
+.status.active {
+    background: var(--darkblue);
+}
+.btn-primary {
+    border-radius: 0;
+}
